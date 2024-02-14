@@ -5,13 +5,13 @@
   --programcolor: #333;
   --gradiantl: #383934;
   --sectionendspace150px: 150px;
-  --menustop100: 100px;
   --sectionendspace75px: 75px;
   --menustop50: 50px;
+  --menustop75: 75px;
   --gradianth: #8b8782;
   --grey: #343533;
   --white-2: white;
-  --menustop75: 75px;
+  --menustop100: 100px;
 }
 
 .w-layout-hflex {
@@ -79,9 +79,11 @@
 .navbar {
   background-color: var(--white);
   border-bottom: 1px solid #000;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
 .container-2 {
@@ -109,6 +111,7 @@
   color: var(--orange);
   text-transform: uppercase;
   align-self: flex-start;
+  margin-top: 0;
   margin-bottom: 0;
   font-family: futura-pt, sans-serif;
   font-size: 60px;
@@ -126,7 +129,7 @@
 }
 
 .sectionheading.designer {
-  margin-top: auto;
+  margin-top: 0;
   font-size: 40px;
 }
 
@@ -413,7 +416,6 @@
 
 .contactsection {
   margin-bottom: var(--sectionendspace150px);
-  padding-top: var(--menustop100);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   flex-direction: column;
@@ -426,14 +428,14 @@
 }
 
 .servicessection {
-  margin-bottom: var(--sectionendspace150px);
-  padding-top: var(--menustop100);
+  margin-bottom: var(--menustop75);
   flex-direction: column;
   align-items: center;
   display: flex;
 }
 
 .herosection {
+  margin-top: 120px;
   margin-bottom: var(--sectionendspace150px);
 }
 
@@ -454,7 +456,7 @@
   grid-template-columns: auto 1fr;
   grid-auto-columns: 1fr;
   align-content: start;
-  margin-top: 60px;
+  margin-top: 0;
   display: grid;
 }
 
@@ -471,8 +473,7 @@
 }
 
 .aboutsection {
-  margin-bottom: var(--sectionendspace150px);
-  padding-top: var(--menustop100);
+  margin-bottom: var(--menustop75);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -572,7 +573,6 @@
 
 .projectsection1 {
   margin-bottom: 150px;
-  padding-top: 150px;
 }
 
 .div-block-29 {
@@ -752,6 +752,7 @@
   grid-template-rows: auto auto;
   grid-template-columns: auto 50%;
   grid-auto-columns: 1fr;
+  margin-bottom: 60px;
   display: block;
 }
 
@@ -764,13 +765,9 @@
   align-self: flex-start;
 }
 
-.designer {
-  margin-top: 60px;
-  padding-top: 30px;
-}
-
 .secline {
   justify-content: center;
+  margin-bottom: 75px;
   display: flex;
 }
 
@@ -924,7 +921,12 @@
     grid-template-columns: .25fr auto .25fr;
   }
 
-  .servicessection, .herosection {
+  .servicessection {
+    margin-bottom: var(--sectionendspace75px);
+  }
+
+  .herosection {
+    margin-top: 70px;
     margin-bottom: var(--sectionendspace75px);
   }
 
@@ -1089,10 +1091,6 @@
     justify-content: start;
   }
 
-  .servicessection {
-    padding-top: var(--menustop50);
-  }
-
   .div-block-15 {
     grid-template-columns: auto;
   }
@@ -1111,6 +1109,10 @@
 
   .text-block-4 {
     display: none;
+  }
+
+  .aboutsection {
+    margin-bottom: var(--menustop50);
   }
 
   .div-block-26 {
@@ -1149,6 +1151,10 @@
 
   .flex-block-6 {
     min-width: 600px;
+  }
+
+  .secline {
+    margin-bottom: 50px;
   }
 
   .container-10 {
@@ -1267,13 +1273,20 @@
     grid-row-gap: 0px;
     grid-template-columns: auto;
     justify-content: center;
+    margin-bottom: 75px;
+    padding-top: 0;
+  }
+
+  .servicessection {
+    margin-bottom: 50px;
   }
 
   .herosection {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    margin-bottom: 0;
+    margin-top: 65px;
+    margin-bottom: 75px;
     display: flex;
   }
 
@@ -1306,7 +1319,7 @@
   }
 
   .projectsection1 {
-    margin-bottom: 0;
+    margin-bottom: 75px;
   }
 
   .mobileportraitversion {
