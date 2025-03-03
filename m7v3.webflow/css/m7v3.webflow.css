@@ -970,11 +970,7 @@
   color: var(--orange);
 }
 
-.hamburger:focus-visible {
-  color: var(--gradianth);
-}
-
-.hamburger[data-wf-focus-visible] {
+.hamburger:focus-visible, .hamburger[data-wf-focus-visible] {
   color: var(--gradianth);
 }
 
