@@ -946,7 +946,9 @@ body {
 
 .section-9 {
   background-color: var(--white);
-  margin-top: auto;
+  flex-flow: column;
+  position: fixed;
+  inset: auto 0% 0%;
 }
 
 .section-10 {
@@ -1344,6 +1346,14 @@ body {
   align-self: center;
   margin-left: 15px;
   font-size: 20px;
+}
+
+.body-2 {
+  display: block;
+}
+
+.link-block-10 {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
